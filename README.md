@@ -109,3 +109,20 @@ w nim tworzymy SECRET_KEY=jakis losowy ciag znakow
 ### ustawiamy zmienna srodowiskowa na heroku
 
 heroku config:set SECRET_KEY=ciagznakow
+
+### dodanie zmian i commit
+
+git add .
+git commit -m "message"
+
+### wypchniecie do heroku
+
+git push heroku master
+
+### heroku addons
+
+pokazuje dodatki
+
+### heroku run python manage.py shell 
+
+heroku run 
