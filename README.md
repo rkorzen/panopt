@@ -64,6 +64,36 @@ po tym wchodzimy na adres
 
 127.0.0.1:8000/
 
+## Commit
 
+git add .
+git commit -m "message"
 
+git push origin master
+
+## heroku
+
+### zaloguj sie do heroku
+
+heroku login
+
+### Utworzenie projektu heroku
+
+heroku create
+
+heroku create panopt-yana
+
+### utwórz Procfile
+
+web: python manage.py runserver 0.0.0.0:$PORT
+
+### zainstaluj django-heroku
+
+https://github.com/heroku/django-heroku
+
+dodaj do requirements django-heroku
+
+pip install -r requirements.txt
+
+### konfiguracja django-heroku
 
