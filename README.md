@@ -97,3 +97,15 @@ pip install -r requirements.txt
 
 ### konfiguracja django-heroku
 
+Dodanie w settings.py na koncu kodu:
+
+import django_heroku
+django_heroku.settings(locals())
+
+### Utworzymy plik .env
+
+w nim tworzymy SECRET_KEY=jakis losowy ciag znakow
+
+### ustawiamy zmienna srodowiskowa na heroku
+
+heroku config:set SECRET_KEY=ciagznakow
