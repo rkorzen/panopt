@@ -126,3 +126,14 @@ pokazuje dodatki
 ### heroku run python manage.py shell 
 
 heroku run 
+
+###  heroku maintenance:on|off
+Przejscie w tryb tymczasowe niedostepnosci strony
+
+### tworzenie superusera
+
+heroku run python manage.py createsuperuser
+
+### by nie bylo bledu CSRF trzeba dodac adres naszej apki w settings do listy
+
+CSRF_TRUESTED_ORIGINS
