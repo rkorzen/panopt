@@ -137,3 +137,20 @@ heroku run python manage.py createsuperuser
 ### by nie bylo bledu CSRF trzeba dodac adres naszej apki w settings do listy
 
 CSRF_TRUESTED_ORIGINS
+
+
+
+
+
+
+
+
+# ZADANIE
+
+1. Utwórz aplikację photos
+2. Dodaj do settings
+3. Dodaj model
+    Gallery
+       owner = FK(auth.User)
+       title
+       description

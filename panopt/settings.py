@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY", 'django-insecure-+1lh6s7-r(7b!ku^*uu@w)(@+iqgt@!^r&5#lj6((4_^*ne-kj')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG", True)
 
 ALLOWED_HOSTS = []
 
@@ -43,7 +43,13 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
 
     'main.apps.MainConfig',
+    'posts.apps.PostsConfig',
 ]
+
+if DEBUG:
+    INSTALLED_APPS += [
+        "django_extensions",
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
