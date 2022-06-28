@@ -41,9 +41,10 @@ INSTALLED_APPS = [
     'bootstrap5',
     'crispy_forms',
     'crispy_bootstrap5',
-
-    'main.apps.MainConfig',
     'posts.apps.PostsConfig',
+    'main.apps.MainConfig',
+    "photos.apps.PhotosConfig",
+
 ]
 
 if DEBUG:
@@ -66,7 +67,7 @@ ROOT_URLCONF = 'panopt.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

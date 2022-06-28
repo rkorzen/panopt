@@ -154,3 +154,5 @@ CSRF_TRUESTED_ORIGINS
        owner = FK(auth.User)
        title
        description
+4. make migrations and migrate
+5. utworz w shell obiekt galerii
