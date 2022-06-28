@@ -20,3 +20,4 @@ class NewUserForm(UserCreationForm):
             user.save()
         return user
 
+# https://github.com/rkorzen/panopt
